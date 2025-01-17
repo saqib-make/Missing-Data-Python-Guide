@@ -56,7 +56,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load dataset
-df = pd.read_csv('data.csv')
+df = sns.load_dataset("titanic")
 
 # Visualize missing data
 sns.heatmap(df.isnull(), cbar=False, cmap="viridis")
